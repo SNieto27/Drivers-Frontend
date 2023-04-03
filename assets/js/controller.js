@@ -16,6 +16,7 @@ const mostrarSeccionSolicitudes = () => {
     document.getElementById('seccion-login').style.display = "none";
     document.getElementById('seccion-signin').style.display = "none";
     document.getElementById('seccion-solicitudes').style.display = "block";
+    generarListaSolicitudes();
 }
 
 var pedidos = [
@@ -60,3 +61,27 @@ var pedidos = [
         urlLogo: 'assets/img/logo-empresas/pizzahut.png'
     }
 ];
+
+const generarListaSolicitudes = () => {
+    pedidos.forEach(function(pedido){
+        document.getElementById('solicitudes').innerHTML +=
+        `<div class="contenedor-solicitud">
+            <div class="contenedor-int1">
+                <div class="contenedor-int2 mb-2">
+                    <div><img src="${pedido.urlLogo}" alt=""></div>
+                    <div class="nombre-empresa">${pedido.empresa}</div>
+                </div>
+                <div class="contenedor-int3">
+                    <div class="mb-2"><i class="fa-solid fa-motorcycle"></i> ${pedido.tiempo} min</div>
+                    <div class="mb-2">L. ${pedido.costoEnvio}</div>
+                    <div>${pedido.distancia} Km</div>
+                    <div>${pedido.id}</div>
+                </div>
+            </div>
+            <div class="contenedor-int4">
+                <div class="btn-menu-solicitud">Ver Mapa</div>
+                <div class="btn-menu-solicitud">Aceptar</div>
+            </div>
+        </div>`
+    })
+};
