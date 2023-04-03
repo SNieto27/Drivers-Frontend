@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/356b839ecb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Delivery Hero Driver</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="imagen.png">
+</head>
+<body>
+    <main id="seccion-login">
+        <div class="mb-5">
+            <div class="logo"><img src="assets/img/logo.jpg" alt=""></div>
+            <div class="driver-logo">Driver</div>
+        </div>
+        <div class="p-4">
+            <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 2rem;">INICIA SESIÓN</div>
+            <div class="mb-5 mt-5">
+                <label for="correo-login" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo-login" placeholder="name@example.com">
+            </div>
+            <div class="mb-5">
+                <label for="pass-login" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="pass-login" placeholder="password">
+            </div>
+        </div>
+        <div class="contenedor-btn mb-5">
+            <button onclick="mostrarSeccionSolicitudes()" class="btn-login-large">Inicia Sesión</button>
+        </div>
+        <div>
+            <div class="pregunta">¿No tienes cuenta?</div>
+            <div class="contenedor-btn">
+                <button onclick="mostrarSeccionSignIn()" class="btn-signin-small">Crear Cuenta</button>
+            </div>
+        </div>
+    </main>
+
+    <main id="seccion-signin">
+        <div class="mb-4">
+            <div class="logo"><img src="assets/img/logo.jpg" alt=""></div>
+            <div class="driver-logo">Driver</div>
+        </div>
+        <div class="p-4">
+            <div class="mb-3" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.5rem;">Crear Cuenta</div>
+            <div class="doble-campo mb-3">
+                <div style="margin-right: 5px;">
+                    <label for="nombre-signin" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="nombre-signin" placeholder="Saul">
+                </div>
+                <div>
+                    <label for="apellido-signin" class="form-label">Apellido</label>
+                    <input type="password" class="form-control" id="apellido-signin" placeholder="Nieto">
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="correo-signin" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo-signin" placeholder="name@example.com">
+                </div>
+                <div>
+                    <label for="pass-signin" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="pass-signin" placeholder="password">
+                </div>
+            </div>
+            <div class="doble-campo mb-3">
+                <div style="margin-right: 5px;">
+                    <label for="celular-signin" class="form-label">No. Celular</label>
+                    <input type="email" class="form-control" id="celular-signin" placeholder="XXXX-XXXX">
+                </div>
+                <div>
+                    <label for="id-signin" class="form-label">No. Identidad</label>
+                    <input type="password" class="form-control" id="id-signin" placeholder="XXXX-XXXX-XXXXX">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="placa-signin" class="form-label">Placa de Motocicleta</label>
+                    <input type="password" class="form-control" id="placa-signin" placeholder="XXX-XXXX">
+                </div>
+            </div>
+            <div class="contenedor-btn mb-4 mt-5">
+                <button onclick="mostrarSeccionSolicitudes()" class="btn-login-large">Crear Cuenta</button>
+            </div>
+            <div>
+                <div class="pregunta">¿Ya tienes cuenta?</div>
+                <div class="contenedor-btn">
+                    <button onclick="mostrarSeccionLogIn()" class="btn-signin-small">Inicia Sesión</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main id="seccion-solicitudes">
+        <nav class="barra-superior">
+            <div class="contenedor-btn-menu"><i class="fa-solid fa-bars" style="color: #47B5FF; font-size: 2rem;"></i></div>
+            <div class="txt-vanilla">Solicitudes de Entrega</div>
+            <div><img src="assets/img/logoS.png" alt="" class="logo-nav"></div>
+        </nav>
+        <div class="contenedor-solicitud">
+            <div class="contenedor-int1">
+                <div class="contenedor-int2 mb-2">
+                    <div><img src="assets/img/logo-empresas/pizzahut.png" alt=""></div>
+                    <div class="nombre-empresa">PIZZA HUT</div>
+                </div>
+                <div class="contenedor-int3">
+                    <div class="mb-2"><i class="fa-solid fa-motorcycle"></i> 9 min</div>
+                    <div class="mb-2">L. 35</div>
+                    <div>4.8 Km</div>
+                    <div>#B25C22</div>
+                </div>
+            </div>
+            <div class="contenedor-int4">
+                <div class="btn-menu-solicitud">Ver Mapa</div>
+                <div>Aceptar</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

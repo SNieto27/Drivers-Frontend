@@ -1,0 +1,129 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.driver-logo {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'ABeeZee', sans-serif;
+    align-items: flex-start;
+    color: #CBC0ED;
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    left: 100px;
+    top: 110px;
+}
+
+.form-label {
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-login-large {
+    background-color: #4F3EA3;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    border-width: 0px;
+    width: 200px;
+    height: 40px;
+}
+
+.contenedor-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+}
+
+.btn-signin-small {
+    background-color: #4F3EA3;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    border-width: 0px;
+    width: 100px;
+    height: 30px;
+}
+
+.doble-campo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F3EA3;
+}
+
+.contenedor-btn-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.txt-vanilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo-nav {
+    width: 100px;
+    margin: 10px 0px;
+}
+
+.contenedor-solicitud {
+    display: flex;
+    border: 1px solid #000000;
+}
+
+.contenedor-int1 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.contenedor-int2 {
+    display: flex;
+    margin-right: 140px;
+}
+
+.contenedor-int3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.contenedor-int4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nombre-empresa {
+    margin-left: 30px; 
+    width: max-content; 
+    margin-top: 15px;
+}
+
+.btn-menu-solicitud {
+    background-color: #CBC0ED;
+}
