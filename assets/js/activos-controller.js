@@ -1,34 +1,3 @@
-const mostrarSeccionLogIn = () => {
-    document.getElementById('seccion-login').style.display = "block";
-    document.getElementById('seccion-signin').style.display = "none";
-    document.getElementById('seccion-solicitudes').style.display = "none";
-    document.getElementById('seccion-desplegable').style.display = "none";
-}
-
-mostrarSeccionLogIn();
-
-const mostrarSeccionSignIn = () => {
-    document.getElementById('seccion-login').style.display = "none";
-    document.getElementById('seccion-signin').style.display = "block";
-    document.getElementById('seccion-solicitudes').style.display = "none";
-    document.getElementById('seccion-desplegable').style.display = "none";
-}
-
-const mostrarSeccionSolicitudes = () => {
-    document.getElementById('seccion-login').style.display = "none";
-    document.getElementById('seccion-signin').style.display = "none";
-    document.getElementById('seccion-solicitudes').style.display = "block";
-    document.getElementById('seccion-desplegable').style.display = "none";
-    generarListaSolicitudes();
-}
-
-const mostrarSeccionDesplegable = () => {
-    document.getElementById('seccion-login').style.display = "none";
-    document.getElementById('seccion-signin').style.display = "none";
-    document.getElementById('seccion-solicitudes').style.display = "none";
-    document.getElementById('seccion-desplegable').style.display = "block";
-}
-
 var pedidos = [
     {
         id: 'B25C21',
@@ -72,9 +41,9 @@ var pedidos = [
     }
 ];
 
-const generarListaSolicitudes = () => {
+renderizarActivos = () => {
     pedidos.forEach(function(pedido){
-        document.getElementById('solicitudes').innerHTML +=
+        document.getElementById('activos').innerHTML +=
         `<div class="contenedor-solicitud">
             <div class="contenedor-int1">
                 <div class="contenedor-int2 mb-2">
@@ -94,16 +63,10 @@ const generarListaSolicitudes = () => {
             </div>
         </div>`
     })
-};
-
-irDetalles = () => {
-    window.location.href = "detalles.html"; 
 }
 
-irHistorial = () => {
-    window.location.href = "historial.html"
-}
+renderizarActivos();
 
-irActivos = () => {
-    window.location.href = "activos.html"
+irIndex = () => {
+    window.location.href = "index.html"
 }

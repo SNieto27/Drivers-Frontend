@@ -152,3 +152,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+.contenedor-historial2 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.contenedor-historial1 {
+    display: flex;
+    border: 1px solid #000000;
+    justify-content: center;
+}
