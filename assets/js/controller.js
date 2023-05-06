@@ -2,6 +2,7 @@ const mostrarSeccionLogIn = () => {
     document.getElementById('seccion-login').style.display = "block";
     document.getElementById('seccion-signin').style.display = "none";
     document.getElementById('seccion-solicitudes').style.display = "none";
+    document.getElementById('seccion-desplegable').style.display = "none";
 }
 
 mostrarSeccionLogIn();
@@ -10,13 +11,22 @@ const mostrarSeccionSignIn = () => {
     document.getElementById('seccion-login').style.display = "none";
     document.getElementById('seccion-signin').style.display = "block";
     document.getElementById('seccion-solicitudes').style.display = "none";
+    document.getElementById('seccion-desplegable').style.display = "none";
 }
 
 const mostrarSeccionSolicitudes = () => {
     document.getElementById('seccion-login').style.display = "none";
     document.getElementById('seccion-signin').style.display = "none";
     document.getElementById('seccion-solicitudes').style.display = "block";
+    document.getElementById('seccion-desplegable').style.display = "none";
     generarListaSolicitudes();
+}
+
+const mostrarSeccionDesplegable = () => {
+    document.getElementById('seccion-login').style.display = "none";
+    document.getElementById('seccion-signin').style.display = "none";
+    document.getElementById('seccion-solicitudes').style.display = "none";
+    document.getElementById('seccion-desplegable').style.display = "block";
 }
 
 var pedidos = [
@@ -80,8 +90,12 @@ const generarListaSolicitudes = () => {
             </div>
             <div class="contenedor-int4">
                 <div class="btn-menu-solicitud">Ver Mapa</div>
-                <div class="btn-menu-solicitud">Aceptar</div>
+                <div class="btn-menu-solicitud" onclick="irDetalles()">Aceptar</div>
             </div>
         </div>`
     })
 };
+
+irDetalles = () => {
+    window.location.href = "detalles.html"; 
+}

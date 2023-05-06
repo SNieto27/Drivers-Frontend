@@ -134,3 +134,21 @@
     align-items: center;
     justify-content: center;
 }
+
+#superior-detalles {
+    background-color: #F4EEFF;
+}
+
+.nombre-cantidad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centrar-subt {
+    margin: 0px auto;
+}
+
+.desplegable {
+    display: flex;
+    justify-content: space-between;
+}

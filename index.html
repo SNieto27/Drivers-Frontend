@@ -99,12 +99,37 @@
 
     <main id="seccion-solicitudes">
         <nav class="barra-superior">
-            <div class="contenedor-btn-menu"><i class="fa-solid fa-bars" style="color: #47B5FF; font-size: 2rem;"></i></div>
+            <div class="contenedor-btn-menu" onclick="mostrarSeccionDesplegable()"><i class="fa-solid fa-bars" style="color: #47B5FF; font-size: 2rem;"></i></div>
             <div class="txt-vanilla">Solicitudes de Entrega</div>
             <div><img src="assets/img/logoS.png" alt="" class="logo-nav"></div>
         </nav>
         <div id="solicitudes">
 
+        </div>
+    </main>
+
+    <main id="seccion-desplegable">
+        <nav class="barra-superior">
+            <div class="contenedor-btn-menu"><i class="fa-solid fa-bars" style="color: #47B5FF; font-size: 2rem;"></i></div>
+            <div class="txt-vanilla">Opciones</div>
+            <div onclick="mostrarSeccionSolicitudes()"><img src="assets/img/logoS.png" alt="" class="logo-nav"></div>
+        </nav>
+        <div class="desplegable mx-5">
+            <div class="nombre-empresa">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <div class="nombre-empresa">
+                Ver historial
+            </div>
+        </div>
+        <hr>
+        <div class="desplegable mx-5">
+            <div class="nombre-empresa">
+                <i class="fa-regular fa-calendar-check"></i>
+            </div>
+            <div class="nombre-empresa">
+                Ver pedidos activos
+            </div>
         </div>
     </main>
 
