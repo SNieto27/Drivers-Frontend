@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="contenedor-btn mb-5">
-            <button onclick="mostrarSeccionSolicitudes()" class="btn-login-large">Inicia Sesión</button>
+            <button onclick="irPrincipal()" class="btn-login-large">Inicia Sesión</button>
         </div>
         <div>
             <div class="pregunta">¿No tienes cuenta?</div>
@@ -86,49 +86,13 @@
                 </div>
             </div>
             <div class="contenedor-btn mb-4 mt-5">
-                <button onclick="mostrarSeccionSolicitudes()" class="btn-login-large">Crear Cuenta</button>
+                <button onclick="irPrincipal()" class="btn-login-large">Crear Cuenta</button>
             </div>
             <div>
                 <div class="pregunta">¿Ya tienes cuenta?</div>
                 <div class="contenedor-btn">
                     <button onclick="mostrarSeccionLogIn()" class="btn-signin-small">Inicia Sesión</button>
                 </div>
-            </div>
-        </div>
-    </main>
-
-    <main id="seccion-solicitudes">
-        <nav class="barra-superior">
-            <div class="contenedor-btn-menu" onclick="mostrarSeccionDesplegable()"><i class="fa-solid fa-bars" style="color: #47B5FF; font-size: 2rem;"></i></div>
-            <div class="txt-vanilla">Solicitudes de Entrega</div>
-            <div><img src="assets/img/logoS.png" alt="" class="logo-nav"></div>
-        </nav>
-        <div id="solicitudes">
-
-        </div>
-    </main>
-
-    <main id="seccion-desplegable">
-        <nav class="barra-superior">
-            <div class="contenedor-btn-menu"><i class="fa-solid fa-bars" style="color: #47B5FF; font-size: 2rem;"></i></div>
-            <div class="txt-vanilla">Opciones</div>
-            <div onclick="mostrarSeccionSolicitudes()"><img src="assets/img/logoS.png" alt="" class="logo-nav"></div>
-        </nav>
-        <div class="desplegable mx-5" onclick="irHistorial()">
-            <div class="nombre-empresa">
-                <i class="fa-solid fa-clock-rotate-left"></i>
-            </div>
-            <div class="nombre-empresa">
-                Ver historial
-            </div>
-        </div>
-        <hr>
-        <div class="desplegable mx-5" onclick="irActivos()">
-            <div class="nombre-empresa">
-                <i class="fa-regular fa-calendar-check"></i>
-            </div>
-            <div class="nombre-empresa">
-                Ver pedidos activos
             </div>
         </div>
     </main>

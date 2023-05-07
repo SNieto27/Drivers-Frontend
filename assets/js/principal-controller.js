@@ -41,11 +41,22 @@ var pedidos = [
     }
 ];
 
-renderizarHistorial = () => {
+const mostrarSeccionSolicitudes = () => {
+    document.getElementById('seccion-solicitudes').style.display = "block";
+    document.getElementById('seccion-desplegable').style.display = "none";
+    generarListaSolicitudes();
+}
+
+const mostrarSeccionDesplegable = () => {
+    document.getElementById('seccion-solicitudes').style.display = "none";
+    document.getElementById('seccion-desplegable').style.display = "block";
+}
+
+const generarListaSolicitudes = () => {
     pedidos.forEach(function(pedido){
-        document.getElementById('historial').innerHTML +=
-        `<div class="contenedor-historial1">
-            <div class="contenedor-historial2">
+        document.getElementById('solicitudes').innerHTML +=
+        `<div class="contenedor-solicitud">
+            <div class="contenedor-int1">
                 <div class="contenedor-int2 mb-2">
                     <div><img src="${pedido.urlLogo}" alt=""></div>
                     <div class="nombre-empresa">${pedido.empresa}</div>
@@ -57,12 +68,24 @@ renderizarHistorial = () => {
                     <div>${pedido.id}</div>
                 </div>
             </div>
+            <div class="contenedor-int4">
+                <div class="btn-menu-solicitud">Ver Mapa</div>
+                <div class="btn-menu-solicitud" onclick="irDetalles()">Aceptar</div>
+            </div>
         </div>`
     })
+};
+
+mostrarSeccionSolicitudes();
+
+irDetalles = () => {
+    window.location.href = "detalles.html"; 
 }
 
-renderizarHistorial();
+irHistorial = () => {
+    window.location.href = "historial.html"
+}
 
-irPrincipal = () => {
-    window.location.href = "principal.html"
+irActivos = () => {
+    window.location.href = "activos.html"
 }

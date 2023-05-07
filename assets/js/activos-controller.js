@@ -67,6 +67,6 @@ renderizarActivos = () => {
 
 renderizarActivos();
 
-irIndex = () => {
-    window.location.href = "index.html"
+irPrincipal = () => {
+    window.location.href = "principal.html"
 }
